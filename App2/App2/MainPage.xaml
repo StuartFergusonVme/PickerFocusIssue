@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.MainPage">
+
+    <StackLayout>
+
+        <Entry x:Name="TestEntry" Completed="TestEntry_OnCompleted"></Entry>
+        <Picker x:Name="TestPicker" Title="Choose type" Focused="TestPicker_OnFocused" Unfocused="TestPicker_OnUnfocused">
+            <Picker.Items>
+                <x:String>Supplier Return</x:String>
+                <x:String>Insurance Claim</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button x:Name="SaveButton" Text="Save" Focused="SaveButton_OnFocused" Clicked="SaveButton_OnClicked"></Button>
+
+    </StackLayout>
+
+</ContentPage>
